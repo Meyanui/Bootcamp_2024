@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+/* Body Styling */
+html, body {
+  height: 100%;
+}
+
+body {
+  background-image: url(../../images/avenger.jpg); /* Path to your local image */
+  background-size: cover; /* Make sure the image covers the entire page */
+
+}
+
+
+nav{
+  background-color: black;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-inline: 20px;
+}
+
+img{
+  width: 75px;
+  height: 75px;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+}
+.menu a{
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 600;
+    
+}
+
+.menu a:hover {
+  background-color: #b10e0e;
+  
+}
+
+.container h1{
+  font-size: 80px;}
+
+.container{
+margin-top: 300px;
+margin-left: 30px;
+
+}
+.container p{
+width: 500px;
+margin-top: 40px;
+color: white;
+font-size: 18px;
+
+}

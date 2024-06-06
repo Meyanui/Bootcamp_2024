@@ -1,0 +1,39 @@
+*{
+  padding: 0;
+  margin: 0;
+
+}
+footer{
+  background-color: #a45555;
+}
+
+.footercontainer{
+  width:100%;
+  padding: 70px 30px 20px;
+}
+
+.social_icons{
+  display: flex;
+  justify-content: center;
+}
+.social_icons a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: aliceblue;
+  margin: 10px;
+  border-radius: 20px;
+}
+.social_icons a i{
+  font-size: 2em;
+  color: rgb(147, 89, 17);
+  opacity: 0.9;
+}
+/* hover effect on social media icons. */
+.social_icons a:hover{
+  background-color: rgb(147, 89, 17);
+  transition: 0.5s;
+}
+.social_icons a:hover i{
+  color: whitesmoke;
+  transition: 0.5s;
+}
