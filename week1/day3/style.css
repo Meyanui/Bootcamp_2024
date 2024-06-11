@@ -1,0 +1,24 @@
+h1, h2, h4 {
+  color: blue;
+  /* font-size: 50px; */
+  text-indent: 0.9cm;
+} 
+
+div {
+  background-image: url("../day2/vacations/images/tiger1.jpeg");
+  width: 1000px;
+  height: 1000px;
+  background-repeat: no-repeat;
+}
+
+p{
+  padding: 500px 100px 50px;
+  /* margin-left: .5cm; */
+  margin-right: 5cm;
+  text-align: justify;
+  margin-top: 5cm;
+  font-size: 30px;
+  /* text-indent: 2cm; */
+  color: white;
+ 
+}

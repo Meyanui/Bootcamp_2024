@@ -1,0 +1,44 @@
+
+p {
+  height: 200px;
+  width: 200px;
+  background-color: aquamarine;
+}
+
+.square {
+  background-color: green;
+  width: 600px;
+  padding: 90px;
+  border-radius: 5px;
+  border: 5px solid aquamarine;
+  
+}
+.flag {
+  height: 300px;
+  width: 600px;
+  border: 2px solid blue;
+  display: flex;
+}
+
+ .blue {
+  background-color: blue;
+  height: 100%;
+  width: 200px
+}
+.white {
+  background-color: white;
+  height: 100%;
+  width: 200px;
+  display: flex;
+}
+
+.red {
+  background-color: red;
+  height: 100%;
+  width: 200px
+}
+
+.white img{
+height: 10vh;
+padding: 100px 50px 100px;
+}
