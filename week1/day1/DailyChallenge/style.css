@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-  background-image: url(../../images/avenger.jpg); /* Path to your local image */
+  background-image: url(./avenger.jpg); /* Path to your local image */
   background-size: cover; /* Make sure the image covers the entire page */
 
 }
