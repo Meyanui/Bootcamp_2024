@@ -33,19 +33,19 @@ my_tuples = (my_name, my_age, hello)
 # find the value 20 in the list, and if it is present, replace it with 200. Only update the first occurrence of a value
 # Hint : Look at the index method
 
-# # Solution
-# list1 = [5, 10, 15, 20, 25, 50, 20]
+# Solution
+list1 = [5, 10, 15, 20, 25, 50, 20]
 
-# # Check if 20 is in the list
-# if 20 in list1:
-#     # Find the index of the first occurrence of 20
-#     value_of_20 = list1.index(20)
-#     print(value_of_20)
+# Check if 20 is in the list
+if 20 in list1:
+    # Find the index of the first occurrence of 20
+    nouvelle_valeur = list1.index(20)
+    print(nouvelle_valeur)
 
-#     # Replace the first occurrence of 20 with 200
-#     list1[value_of_20] = 200
+    # Replace the first occurrence of 20 with 200
+    list1[nouvelle_valeur] = 200
 
-#     # print(list1)
+    # print(list1)
 
 
 # Unpack the following tuple into 4 variables
