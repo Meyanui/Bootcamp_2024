@@ -155,3 +155,116 @@ dog1.do_a_trick()
 dog2.do_a_trick()  # This dog is not trained yet, so it should not do a trick
 dog1.train()       # Training again just to ensure it remains trained
 dog1.do_a_trick()
+#################################################################################
+
+# Create a class called Zoo.
+# In this class create a method __init__ that takes one parameter: zoo_name.
+# It instantiates two attributes: animals (an empty list) and name (name of the zoo).
+# Create a method called add_animal that takes one parameter new_animal. This method adds the new_animal to the animals list as long as it isn’t already in the list.
+# Create a method called get_animals that prints all the animals of the zoo.
+# Create a method called sell_animal that takes one parameter animal_sold. This method removes the animal from the list and of course the animal needs to exist in the list.
+# Create a method called sort_animals that sorts the animals alphabetically and groups them together based on their first letter.
+
+class Zoo:
+    def __init__(self, zoo_name, location):
+        self.name = zoo_name
+        self.animals = []
+
+    def add_animal(self, new_animal):
+        if new_animal not in self.animals:
+            self.animals.append(new_animal)
+
+    def get_animals(self):
+        print(f"Animals in the zoo : {self.animals}")
+
+    def sell_animal(self, animal_sold):
+        if animal_sold in self.animals:
+            self.animals.remove(animal_sold)
+    
+
+    def sort_animals(self):
+        # sort the animals alphabeticaly / classer les animaux par ordre alphabétique
+        sorted_animals = sorted(self.animals)
+
+        # prepare our groups / on prépare les groupes
+        grouped_animals = {}
+        current_group = []
+        current_letter = None
+
+        # Going through each animal / Parcourir chaque animal
+        for animal in sorted_animals:
+            # Check and find the first letter / On trouve la première lettre du nom de l'animal
+            first_letter = animal[0]
+
+            # we check if the first letter of the current animal is different from the letter we're using before
+            # on verifie si la première lettre est différente de la lettre qu'on utilise pour comparer :
+            # (current_letter)
+
+            if first_letter != current_letter:
+                # if it's different, we create a group for that letter
+                # si c'est différent, on crée un groupe [] pour cette lettre
+                if current_group:
+                    # grouped_animal = {}
+                    # creating our sub-groups in grouped animals
+                    # on crée nos sous-groupes dans le grand groupe, grouped_animals
+                    grouped_animals[len(grouped_animals) + 1 ] = current_group
+                    # result : { 1: [] }
+
+                    # add the animal in the current_group / ajouter l'animal dans current_group
+                    current_group = [animal]
+                    # result : { 1: ["Ape"] }
+
+                    # add the actual letter to current_letter variable
+                    # ajoute la lettre actuelle à current_letter
+                    current_letter = first_letter
+                    # current_letter = "A"
+
+                    # Antilope
+            else:
+                current_group.append(animal)
+                # result : { 1: ["Ape", "Antilope"] }
+
+
+        if current_group:
+            grouped_animals[len(grouped_animals) + 1 ] = current_group
+        
+        return grouped_animals
+
+        # grouped_animals = { 
+        #    1: "Ape",
+        #    2: ["Baboon", "Bear"],
+        #    3: ['Cat', 'Cougar'],
+        #    4: ['Eel', 'Emu']
+        # }
+
+    # creating the get_groups method
+    def get_groups(self):
+        groups = self.sort_animals()
+        print(groups)
+        for group_number, animals in groups.items():
+            print(f"{group_number} : {animals}")
+
+# Create an object of the Zoo class
+ramat_gan_safari = Zoo("Ramat Gan Safari")
+
+# Adding animals to the zoo
+ramat_gan_safari.add_animal("Ape")
+ramat_gan_safari.add_animal("Baboon")
+ramat_gan_safari.add_animal("Bear")
+ramat_gan_safari.add_animal("Cat")
+ramat_gan_safari.add_animal("Cougar")
+ramat_gan_safari.add_animal("Eel")
+ramat_gan_safari.add_animal("Emu")
+ramat_gan_safari.add_animal("Giraffe")
+
+# Getting all animals in the zoo
+ramat_gan_safari.get_animals()
+
+# Selling an animal
+ramat_gan_safari.sell_animal("Bear")
+
+# Getting all animals in the zoo after selling one
+ramat_gan_safari.get_animals()
+
+# Getting the sorted and grouped animals
+ramat_gan_safari.get_groups()

@@ -5,7 +5,7 @@ class Farm:
         self.animals = {}
 
     def add_animal(self, animal, count=1):
-        # If the animal already exists, update the count; otherwise, add it
+        # Update the count if the animal already exists otherwise, add it
         if animal in self.animals:
             self.animals[animal] += count
         else:
@@ -13,13 +13,12 @@ class Farm:
 
     def get_info(self):
         # Create the header with the farm name
-        result = f"{self.name}'s farm\n\n"
+        info = f"{self.name}'s farm\n\n"
         # Add each animal and its count to the result string
         for animal, count in self.animals.items():
-            result += f"{animal} : {count}\n"
-        # Add the closing line
-        result += "\n    E-I-E-I-O!"
-        return result
+            info += f"{animal} : {count}\n"
+         
+        return info
 ##########################################################################################
 #EXPANDING THE ANIMAL TYPE
 
