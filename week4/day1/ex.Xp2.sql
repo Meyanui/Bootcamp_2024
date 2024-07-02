@@ -89,5 +89,8 @@ select first_name, last_name from students where (right(first_name, 2) like 'a%'
 select first_name, last_name from students where (student_id=1 and student_id=3)
 
 -- Fetch the students whose birth_dates are equal to or come after 1/01/2000. (show all their info).
+SELECT * 
+FROM students 
+WHERE birth_date >= '2000/01/01';
 
 
