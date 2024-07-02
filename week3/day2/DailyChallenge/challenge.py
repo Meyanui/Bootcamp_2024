@@ -57,7 +57,7 @@ p.last_page()
 print("Last page:", p.get_visible_items())  
 
 p.go_to_page(3)
-print("Page 3:", p.get_visible_items())  
+print(f"Page 3: {p.get_visible_items()}")  
 
 p.prev_page()
 print("Previous page:", p.get_visible_items())  
