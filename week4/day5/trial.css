@@ -1,0 +1,97 @@
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  color: #333;
+  padding: 20px;
+}
+
+/* Navigation Menu Styles */
+nav {
+  background-color: #38b000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+nav li a:hover {
+  background-color: #2a8000;
+}
+
+nav li ul {
+  display: none;
+  position: absolute;
+  background-color: #38b000;
+}
+
+nav li:hover ul {
+  display: block;
+}
+
+nav li ul li {
+  margin: 0;
+  padding: 5px 10px;
+}
+
+nav li ul li a:hover {
+  background-color: #2a8000;
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+}
+
+.farm_backgnd{
+  width: 100%;
+  background-image: none;
+}
+
+.p-tag{
+  font-size: 20px;
+  font-weight: 20px;
+  ;
+}
