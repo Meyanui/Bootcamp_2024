@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="./gh.css">
+</head>
+<body>
+  <h1>Your Shopping Cart</h1>
+  <div class="cart-container">
+    <table id="cart-items">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <p id="total-amount">Total: $<span id="total-value">0.00</span></p>
+    <button id="clear-cart">Clear Cart</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
