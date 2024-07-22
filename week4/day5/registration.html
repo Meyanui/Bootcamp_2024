@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farm 2 Plate - Farmer Registration</title>
+  <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+
+  <header>
+    <h1>Farm 2 Plate</h1>
+    <h2>Farmer Registration</h2>
+  </header>
+
+  <main>
+    <form action="register-farmer.php" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Farm Details</legend>
+        <label for="farmName">Farm Name:</label>
+        <input type="text" id="farmName" name="farmName" required>
+  
+        <label for="farmLocation">Farm Location:</label>
+        <input type="text" id="farmLocation" name="farmLocation" required>
+
+        <label for="farmDescription">Farm Description (optional):</label>
+        <textarea id="farmDescription" name="farmDescription" rows="5"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Information</legend>
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+  
+        <label for="emailAddress">Email Address (optional):</label>
+        <input type="email" id="emailAddress" name="emailAddress">
+      </fieldset>
+
+      <fieldset>
+        <legend>Verification & Upload</legend>
+        <p>To ensure security and legitimacy, please upload a copy of your valid government-issued ID and allow location verification.</p>
+        <label for="idUpload">Government ID Upload:</label>
+        <input type="file" id="idUpload" name="idUpload" accept=".jpg,.jpeg,.png,.pdf" required>
+
+        <p>We will use your location information for delivery options and customer outreach. You can manage location privacy settings in your dashboard after registration.</p>
+        <label for="locationVerification">Allow Location Verification? (Yes/No):</label>
+        <input type="radio" id="locationYes" name="locationVerification" value="yes" required>
+        <label for="locationYes">Yes</label>
+        <input type="radio" id="locationNo" name="locationVerification" value="no" required>
+        <label for="locationNo">No</label>
+      </fieldset>
+
+      <input type="submit" value="Register as Farmer">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; Farm 2 Plate 2024</p>
+  </footer>
+
+</body>
+</html>
